@@ -19,14 +19,14 @@
     box-shadow: 0px 4px 18px rgba(32,0,0,0.3);
     filter:         brightness(1);
     -webkit-filter: brightness(1);
+    .card-category    { top:  1.14em; left:   1.14em; }
+    .card-user        { top:  1.14em; right:  1.14em; }
+    .card-description { left: 1.14em; bottom: 1.00em; }
   }
   a {
     color: #fff;
   }
 }
-.card:hover .card-category    { top:  1.14em; left:   1.14em; }
-.card:hover .card-user        { top:  1.14em; right:  1.14em; }
-.card:hover .card-description { left: 1.14em; bottom: 1.00em; }
 
 .card-category {
   position: absolute;

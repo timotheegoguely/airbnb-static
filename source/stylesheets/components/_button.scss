@@ -6,19 +6,20 @@
   padding: .75em 1.5em;
   letter-spacing: 0.025em;
   transition: all 0.05s ease;
+  &:hover,
+  .btn-up:hover {
+    background-color: $brand-color !important;
+    box-shadow: 0px 0px $brand-color-dark;
+    transform: translateY(2px);
+  }
+  &:active {
+    background-color: $brand-color-dark !important;
+  }
+  &:visited {
+    background-color: $brand-color !important;
+  }
 }
-.btn-up:hover,
-.btn-primary:hover {
-  background-color: $brand-color !important;
-  box-shadow: 0px 0px $brand-color-dark;
-  transform: translateY(2px);
-}
-.btn-primary:active {
-  background-color: $brand-color-dark !important;
-}
-.btn-primary:visited {
-  background-color: $brand-color !important;
-}
+
 .btn-lg {
   margin: 0;
 }
