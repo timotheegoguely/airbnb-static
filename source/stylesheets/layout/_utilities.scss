@@ -23,3 +23,19 @@
 .bg-facebook {
   background: #3b5998;
 }
+
+// Wrappers
+.wrapper {
+  &-white {
+    background: #fff;
+  }
+  &-primary {
+    background: $brand-color;
+  }
+  &-grey {
+    background: $gray-lighter;
+  }
+  &-darkgrey {
+    background: $gray-dark;
+  }
+}

@@ -19,19 +19,29 @@
 }
 
 .login-form {
+  background-color: #fff;
   color: #414141;
   padding: 2em;
-  display: none;
-  position: absolute;
   box-sizing: border-box;
-  background-color: #fff;
   border-radius: 4px;
   box-shadow: 0 2px 8px rgba(0,0,0,.3);
-  z-index: 10;
-}
-.login-form .form-control:focus {
-  box-shadow: none;
-}
-::-webkit-input-placeholder {
-  color: rgba(0,0,0,.25) !important;
+  .form-group {
+    margin-bottom: 1.5em;
+  }
+  .forgot a {
+    color: $gray-light;
+    &:hover {
+      color: $gray;
+    }
+  }
+  .form-control:focus {
+    box-shadow: none;
+  }
+  input[type="submit"] {
+    width: 100%;
+    margin-bottom: 1em;
+  }
+  &::-webkit-input-placeholder {
+    color: rgba(0,0,0,.25) !important;
+  }
 }

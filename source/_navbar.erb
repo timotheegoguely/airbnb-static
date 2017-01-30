@@ -1,6 +1,6 @@
 <div class="navbar-wagon">
   <!-- Logo -->
-  <% link_to "/", class: "navbar-wagon-brand" do %>
+  <% link_to "index.html", class: "navbar-wagon-brand" do %>
     <h1>AirBnb</h1>
   <% end %>
 
@@ -31,7 +31,7 @@
     </div>-->
 
     <!-- Button (call-to-action) -->
-    <a href="#" class="navbar-wagon-item btn btn-primary btn-up">Login</a>
+    <%= link_to "Login", "login.html", class: "navbar-wagon-item btn btn-primary btn-up" %>
   </div>
 
   <!-- Dropdown appearing on mobile only -->
