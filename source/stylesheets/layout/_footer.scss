@@ -1,13 +1,14 @@
 .footer {
   padding: 2em 0;
-  color: rgba(255,255,255,.8);
+  color: $gray-light;
   a {
-    color: inherit;
+    color: $gray-light;
     font-size: 30px;
     letter-spacing: 20px;
     transition: color 0.5s ease;
   }
   p {
     margin: 1em 0;
+    color: $gray-light;
   }
 }

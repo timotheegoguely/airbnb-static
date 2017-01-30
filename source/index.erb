@@ -46,95 +46,28 @@ title: Homepage
   </div>
 </div> <!-- /.container.features -->
 
-<div class="wrapper-grey padded">
+<div class="wrapper-gray padded">
   <div class="container">
     <h3 class="text-center">Your next trip</h3>
     <div class="row cards">
 
-      <div class="col-xs-12 col-sm-4">
-        <div class="card" style="background: linear-gradient(to bottom, rgba(0,0,0,0.1) 33%, rgba(0,0,0,0.4) 100%), url('https://unsplash.it/480/720?image=290');">
-          <span class="card-category"><a href="#">City</a></span>
-          <a href="#">
-            <%= image_tag 'anne.jpg', class: "card-user avatar avatar-bordered", alt: "Anne" %>
-          </a>
-          <div class="card-description">
-            <h4 class="card-title"><a href="#">Title</a></h4>
-            <p class="card-text">Praesent scelerisque nisl consectetur et.</p>
+      <% data.flats.each do |owner, flat| %>
+        <div class="col-xs-12 col-sm-4">
+          <div class="card" style="background-image: linear-gradient(to bottom, rgba(0,0,0,0.1) 33%, rgba(0,0,0,0.4) 100%), url('<%= image_path flat.picture %>');">
+            <div class="card-category"><%= flat.city %></div>
+            <div class="card-description">
+              <h4><%= flat.name %></h4>
+              <p><%= flat.summary %></p>
+            </div>
+            <%= image_tag flat.owner_picture, class:"card-user avatar avatar-bordered avatar-medium" %>
+            <%= link_to "", "flats/#{owner}.html", class: "card-link" %>
           </div>
         </div>
-      </div>
-
-      <div class="col-xs-12 col-sm-4">
-        <div class="card" style="background: linear-gradient(to bottom, rgba(0,0,0,0.1) 33%, rgba(0,0,0,0.4) 100%), url('https://unsplash.it/480/720?image=689');">
-          <span class="card-category"><a href="#">City</a></span>
-          <a href="#">
-            <%= image_tag 'romain.jpg', class: "card-user avatar avatar-bordered", alt: "Romain" %>
-          </a>
-          <div class="card-description">
-            <h4 class="card-title"><a href="#">Title</a></h4>
-            <p class="card-text">Pellentesque quam venenatis vestibulum.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-xs-12 col-sm-4">
-        <div class="card" style="background: linear-gradient(to bottom, rgba(0,0,0,0.1) 33%, rgba(0,0,0,0.4) 100%), url('https://unsplash.it/480/720?image=212');">
-          <span class="card-category"><a href="#">City</a></span>
-          <a href="#">
-            <%= image_tag 'boris.jpg', class: "card-user avatar avatar-bordered", alt: "Boris" %>
-          </a>
-          <div class="card-description">
-            <h4 class="card-title"><a href="#">Title</a></h4>
-            <p class="card-text">Lorem ipsum consectetur adipiscing elit.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-xs-12 col-sm-4">
-        <div class="card" style="background: linear-gradient(to bottom, rgba(0,0,0,0.1) 33%, rgba(0,0,0,0.4) 100%), url('https://unsplash.it/480/720?image=308');">
-          <span class="card-category"><a href="#">City</a></span>
-          <a href="#">
-            <%= image_tag 'https://pbs.twimg.com/profile_images/514910013840564224/s3FMuBwm_bigger.jpeg', class: "card-user avatar avatar-bordered", alt: "Timothée" %>
-          </a>
-          <div class="card-description">
-            <h4 class="card-title"><a href="#">Title</a></h4>
-            <p class="card-text">Duis nisi erat cinia odio sem nec elit.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-xs-12 col-sm-4">
-        <div class="card" style="background: linear-gradient(to bottom, rgba(0,0,0,0.1) 33%, rgba(0,0,0,0.4) 100%), url('https://unsplash.it/480/720?image=405');">
-          <span class="card-category"><a href="#">
-            City</a></span>
-          <a href="#">
-            <%= image_tag 'seb.jpg', class: "card-user avatar avatar-bordered", alt: "Seb" %>
-          </a>
-          <div class="card-description">
-            <h4 class="card-title"><a href="#">Title</a></h4>
-            <p class="card-text">Curabitur blandit tempus porttitor.</p>
-          </div>
-        </div>
-
-        </div>
-      <div class="col-xs-12 col-sm-4">
-        <div class="card" style="background: linear-gradient(to bottom, rgba(0,0,0,0.1) 33%, rgba(0,0,0,0.4) 100%), url('https://unsplash.it/480/720?image=163');">
-          <span class="card-category"><a href="#">
-            City</a></span>
-          <a href="#">
-            <%= image_tag 'anne.jpg', class: "card-user avatar avatar-bordered", alt: "Anne" %>
-          </a>
-          <div class="card-description">
-            <h4 class="card-title"><a href="#">Title</a></h4>
-            <p class="card-text">Cras facilisis in, egestas eget quam.</p>
-          </div>
-        </div>
-
-        </div>
+      <% end %>
 
     </div> <!-- /.row.cards -->
   </div> <!-- /.container -->
-</div> <!-- /.wrapper-grey -->
+</div> <!-- /.wrapper-gray -->
 
 <div class="container newsletter text-center padded">
   <div class="row">

@@ -1,0 +1,54 @@
+seb:
+  owner_name: Sebastien
+  picture: https://unsplash.it/480/720?image=405
+  owner_picture: seb.jpg
+  name: Seb’s room
+  summary: Charming room in Montmartre
+  city: Paris, France
+  description: Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec ullamcorper nulla non metus auctor fringilla.
+  wifi: true
+romain:
+  owner_name: Romain
+  picture: https://unsplash.it/480/720?image=689
+  owner_picture: romain.jpg
+  name: Romain’s flat
+  summary: Nice flat in Piccadilly
+  city: London, UK
+  description: Maecenas sed diam eget risus varius blandit sit amet non magna. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
+  wifi: true
+boris:
+  owner_name: Boris
+  picture: https://unsplash.it/480/720?image=212
+  owner_picture: boris.jpg
+  name: Boris’s flat
+  summary: Beautiful room near the beach
+  city: San Francisco, USA
+  description: Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Sed posuere consectetur est at lobortis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  wifi: true
+anne:
+  owner_name: Anne
+  picture: https://unsplash.it/480/720?image=163
+  owner_picture: anne.jpg
+  name: Anne’s studio
+  summary: Nice studio in Piccadilly
+  city: Lisbon, Portugal
+  description: Cras mattis consectetur purus sit amet fermentum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+  wifi: false
+kevin:
+  owner_name: Kévin
+  picture: https://unsplash.it/480/720?image=308
+  owner_picture: kevin.jpg
+  name: Kévin’s room
+  summary: Cool room near train station
+  city: Lyon, France
+  description: Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur.
+  wifi: true
+timothee:
+  owner_name: Timothée
+  picture: https://unsplash.it/480/720?image=409
+  owner_picture: timothee.jpg
+  name: Timothée’s studio
+  summary: Simply the best flat in the world…
+  city: Paris, France
+  description: Cras justo odio, dapibus ac facilisis in, egestas eget quam. Maecenas faucibus mollis interdum. Aenean lacinia bibendum nulla sed consectetur.
+  wifi: true

@@ -1,0 +1,104 @@
+<% flat = data.flats[owner] %>
+
+<div class="banner banner-panoramic" style="background-image: url(<%= flat.picture %>)">
+</div>
+
+<div class="container padded">
+  <div class="row flat-header">
+    <div class="col-xs-12 col-md-8">
+      <div class="flat-details">
+        <div class="flat-owner text-center">
+          <%= image_tag flat.owner_picture, class: "img-circle avatar-large" %>
+          <p><%= flat.owner_name %></p>
+        </div>
+        <div class="flat-summary">
+          <h4><%= flat.summary %></h4>
+          <p><%= flat.city %></p>
+          <i class="fa fa-star" style="color: #ffb400"></i>
+          <i class="fa fa-star" style="color: #ffb400"></i>
+          <i class="fa fa-star" style="color: #ffb400"></i>
+          <i class="fa fa-star" style="color: #ffb400"></i>
+          <i class="fa fa-star" style="color: #cacccd"></i>
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-12 col-md-4">
+      <form action="#" class="flat-book">
+        <h3>Book this flat</h3>
+        <div class="form-group">
+          <div class="row">
+            <div class="col-xs-6">
+              <input type="date" class="form-control" placeholder="checkin" id="checkin">
+            </div>
+            <div class="col-xs-6">
+              <input type="date" class="form-control" placeholder="checkout">
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <select name="" id="guests" class="form-control">
+            <option value="1">1 guest</option>
+            <option value="2">2 guests</option>
+            <option value="3">3 guests</option>
+          </select>
+        </div>
+        <input type="submit" class="btn btn-primary btn-up" value="Book it" style="width: 100%">
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="wrapper-gray">
+  <div class="container padded">
+
+    <div class="row about">
+      <div class="col-xs-12">
+        <h4>About this flat</h4>
+        <p><%= flat.description %></p>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="row space">
+      <div class="col-xs-12 col-md-2">
+        <p>The Space</p>
+      </div>
+      <div class="col-xs-12 col-md-5">
+        <ul>
+          <li>Accommodates: <strong>2</strong></li>
+          <li>Bathrooms: <strong>1</strong></li>
+          <li>Bed type: <strong>Real bed</strong></li>
+          <li>Bedrooms: <strong>1</strong></li>
+        </ul>
+      </div>
+      <div class="col-xs-12 col-md-5">
+        <ul>
+          <li>Beds: <strong>1</strong></li>
+          <li>Property type: <strong>Apartment</strong></li>
+          <li>Room type: <strong>Entire home/apt</strong></li>
+        </ul>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="row amenities">
+      <div class="col-xs-12 col-md-2">
+        <p>Amenities</p>
+      </div>
+      <div class="col-xs-12 col-md-5">
+        <ul>
+          <li><strong>Kitchen</strong></li>
+          <li><strong>Wifi</strong></li>
+        </ul>
+      </div>
+      <div class="col-xs-12 col-md-5">
+        <ul>
+          <li><strong>TV</strong></li>
+          <li><strong>Welcome drink</strong></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

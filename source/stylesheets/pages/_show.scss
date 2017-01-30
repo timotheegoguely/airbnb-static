@@ -1,0 +1,39 @@
+.flat-details {
+  display: flex;
+  align-items: center;
+  max-height: 320px;
+  .flat-owner {
+    box-sizing: border-box;
+    margin-right: 32px;
+    img {
+      margin-bottom: 8px;
+    }
+  }
+  .flat-summary h4 {
+    font-family: $base-font;
+    font-weight: 400;
+  }
+}
+.flat-book {
+  box-sizing: border-box;
+  background-color: $gray-lighter;
+  padding: 2em;
+  h3 {
+    margin-bottom: 0.5em;
+  }
+  .form-control {
+    font-size: 1em;
+  }
+  #gests {
+    border-radius: none;
+  }
+  input[type="submit"] {
+    margin: 0.5em 0;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .flat-book {
+    margin-top: -144px;
+  }
+}
