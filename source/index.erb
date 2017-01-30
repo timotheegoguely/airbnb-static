@@ -56,8 +56,8 @@ title: Homepage
           <div class="card" style="background-image: linear-gradient(to bottom, rgba(0,0,0,0.1) 33%, rgba(0,0,0,0.4) 100%), url('<%= image_path flat.picture %>');">
             <div class="card-category"><%= flat.city %></div>
             <div class="card-description">
-              <h4><%= flat.name %></h4>
-              <p><%= flat.summary %></p>
+              <h4 class="card-title"><%= flat.name %></h4>
+              <p class="card-summary"><%= flat.summary %></p>
             </div>
             <%= image_tag flat.owner_picture, class:"card-user avatar avatar-bordered avatar-medium" %>
             <%= link_to "", "flats/#{owner}.html", class: "card-link" %>
