@@ -1,0 +1,15 @@
+.team {
+  .members {
+    margin-top: 64px;
+    .member {
+      margin: 0 8px;
+      img {
+        max-width: 160px;
+        margin-bottom: 16px;
+      }
+      p {
+        font-size: 1.25em;
+      }
+    }
+  }
+}

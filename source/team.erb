@@ -1,0 +1,19 @@
+---
+title: Team
+---
+
+<div class="container team text-center padded">
+  <div class="row">
+    <div class="col-xs-10 col-xs-offset-1">
+      <h2>Our team</h2>
+      <ul class="list-inline text-center members">
+        <% ["boris", "seb", "romain"].each do |member| %>
+          <li class="member">
+            <%= image_tag "#{member}.jpg", class: "img-circle" %>
+            <p><%= member.capitalize %></p>
+          </li>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+</div>

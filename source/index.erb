@@ -1,0 +1,167 @@
+---
+title: Homepage
+---
+
+<div class="banner" style="background-image: linear-gradient(-225deg, hsla(2,25%,20%,0.3) 0%, hsla(2,25%,20%,0.3)  50%), url('images/background.jpg')">
+  <div class="banner-content text-center">
+    <h2 class="banner-title">Welcome home</h2>
+    <p class="banner-tagline">Rent unique places to stay from local hosts in 190+ countries.</p>
+    <a class="btn btn-primary btn-lg btn-up" style="width: 274px">How it works</a>
+  </div>
+  <div class="login-form">
+    <form action="#">
+      <div class="form-group text-left">
+        <label>Your email</label>
+        <input type="email" class="form-control" placeholder="bob@gmail.com">
+      </div>
+      <div class="form-group text-left">
+        <label>Your password</label>
+        <input type="password" class="form-control" placeholder="b3st-p4ssw0rd-3v3r">
+      </div>
+      <input type="submit" value="Sign In" class="btn btn-primary btn-lg" style="width: 274px">
+    </form>
+  </div>
+</div>
+
+<div class="container features text-center padded">
+  <div class="row">
+    <figure class="feature col-xs-12 col-sm-6 col-md-3">
+      <img src="images/globe.svg" alt="globe">
+      <figcaption>
+        <h4 class="feature-title">Discover the world</h4>
+        <p>The earth is your new home.</p>
+      </figcaption>
+    </figure>
+
+    <figure class="feature col-xs-12 col-sm-6 col-md-3">
+      <img src="images/dollar.svg" alt="dollar">
+      <figcaption>
+        <h4 class="feature-title">Pay online</h4>
+        <p>No cash issues anymore.</p>
+      </figcaption>
+    </figure>
+
+    <figure class="feature col-xs-12 col-sm-6 col-md-3">
+      <img src="images/beer.svg" alt="beer">
+      <figcaption>
+        <h4 class="feature-title">Meet people</h4>
+        <p>Discover new culture and lifestyle.</p>
+      </figcaption>
+    </figure>
+
+    <figure class="feature col-xs-12 col-sm-6 col-md-3">
+      <img src="images/heart.svg" alt="heart">
+      <figcaption>
+        <h4 class="feature-title">Share and love</h4>
+        <p>Join a community you will love.</p>
+      </figcaption>
+    </figure>
+  </div>
+</div> <!-- /.container.features -->
+
+<div class="wrapper-grey padded">
+  <div class="container">
+    <h3 class="text-center">Your next trip</h3>
+    <div class="row cards">
+
+      <div class="col-xs-12 col-sm-4">
+        <div class="card" style="background: linear-gradient(to bottom, rgba(0,0,0,0.1) 33%, rgba(0,0,0,0.4) 100%), url('https://unsplash.it/480/720?image=290');">
+          <span class="card-category"><a href="#">City</a></span>
+          <a href="#">
+            <%= image_tag 'anne.jpg', class: "card-user avatar avatar-bordered", alt: "Anne" %>
+          </a>
+          <div class="card-description">
+            <h4 class="card-title"><a href="#">Title</a></h4>
+            <p class="card-text">Praesent scelerisque nisl consectetur et.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xs-12 col-sm-4">
+        <div class="card" style="background: linear-gradient(to bottom, rgba(0,0,0,0.1) 33%, rgba(0,0,0,0.4) 100%), url('https://unsplash.it/480/720?image=689');">
+          <span class="card-category"><a href="#">City</a></span>
+          <a href="#">
+            <%= image_tag 'romain.jpg', class: "card-user avatar avatar-bordered", alt: "Romain" %>
+          </a>
+          <div class="card-description">
+            <h4 class="card-title"><a href="#">Title</a></h4>
+            <p class="card-text">Pellentesque quam venenatis vestibulum.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xs-12 col-sm-4">
+        <div class="card" style="background: linear-gradient(to bottom, rgba(0,0,0,0.1) 33%, rgba(0,0,0,0.4) 100%), url('https://unsplash.it/480/720?image=212');">
+          <span class="card-category"><a href="#">City</a></span>
+          <a href="#">
+            <%= image_tag 'boris.jpg', class: "card-user avatar avatar-bordered", alt: "Boris" %>
+          </a>
+          <div class="card-description">
+            <h4 class="card-title"><a href="#">Title</a></h4>
+            <p class="card-text">Lorem ipsum consectetur adipiscing elit.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xs-12 col-sm-4">
+        <div class="card" style="background: linear-gradient(to bottom, rgba(0,0,0,0.1) 33%, rgba(0,0,0,0.4) 100%), url('https://unsplash.it/480/720?image=308');">
+          <span class="card-category"><a href="#">City</a></span>
+          <a href="#">
+            <%= image_tag 'https://pbs.twimg.com/profile_images/514910013840564224/s3FMuBwm_bigger.jpeg', class: "card-user avatar avatar-bordered", alt: "Timothée" %>
+          </a>
+          <div class="card-description">
+            <h4 class="card-title"><a href="#">Title</a></h4>
+            <p class="card-text">Duis nisi erat cinia odio sem nec elit.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xs-12 col-sm-4">
+        <div class="card" style="background: linear-gradient(to bottom, rgba(0,0,0,0.1) 33%, rgba(0,0,0,0.4) 100%), url('https://unsplash.it/480/720?image=405');">
+          <span class="card-category"><a href="#">
+            City</a></span>
+          <a href="#">
+            <%= image_tag 'seb.jpg', class: "card-user avatar avatar-bordered", alt: "Seb" %>
+          </a>
+          <div class="card-description">
+            <h4 class="card-title"><a href="#">Title</a></h4>
+            <p class="card-text">Curabitur blandit tempus porttitor.</p>
+          </div>
+        </div>
+
+        </div>
+      <div class="col-xs-12 col-sm-4">
+        <div class="card" style="background: linear-gradient(to bottom, rgba(0,0,0,0.1) 33%, rgba(0,0,0,0.4) 100%), url('https://unsplash.it/480/720?image=163');">
+          <span class="card-category"><a href="#">
+            City</a></span>
+          <a href="#">
+            <%= image_tag 'anne.jpg', class: "card-user avatar avatar-bordered", alt: "Anne" %>
+          </a>
+          <div class="card-description">
+            <h4 class="card-title"><a href="#">Title</a></h4>
+            <p class="card-text">Cras facilisis in, egestas eget quam.</p>
+          </div>
+        </div>
+
+        </div>
+
+    </div> <!-- /.row.cards -->
+  </div> <!-- /.container -->
+</div> <!-- /.wrapper-grey -->
+
+<div class="container newsletter text-center padded">
+  <div class="row">
+    <div class="col-xs-10 col-xs-offset-1">
+      <h3>Get news from us</h3>
+      <p>Leave us your mail and get news from us</p>
+      <form action="#" class="form-inline">
+        <input type="email" class="form-control" placeholder="bob@gmail.com">
+        <input type="submit" value="Subscribe" class="btn btn-primary btn-lg btn-up">
+      </form>
+    </div>
+  </div>
+</div>
+
+<div id="map" style="width: 100%; height: 400px;"></div>
+
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>

@@ -1,0 +1,10 @@
+a {
+  text-decoration: none;
+  border: none;
+  color: $brand-color;
+  transition: all .1s ease;
+  &:hover {
+    border: none;
+    color: $brand-color-dark;
+  }
+}

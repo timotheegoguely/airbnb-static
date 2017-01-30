@@ -1,0 +1,16 @@
+.feature {
+  img {
+    width: 128px;
+    transition: transform 0.2s ease;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+  p {
+    margin: 0.5em;
+  }
+  &-title {
+    font-weight: bold;
+    margin: 0.5em;
+  }
+}
